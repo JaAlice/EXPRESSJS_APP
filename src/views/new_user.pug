@@ -1,0 +1,19 @@
+extends index.pug 
+
+block main
+        form(action="/users/new" method="POST")
+            p First name:
+            input(type="text" name="firstname" required=true)
+            p Last Name:
+            input(type="text" name="lastname" required=true)
+            p Email:
+            input(type="email" name="email" required=true)
+            p Password:
+            input(type="text" name="password" required=true)
+            br
+            br
+            input(type="submit")
+            br
+            div= message
+            button.button1#button_users
+                a(href='/users') Back to Users

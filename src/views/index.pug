@@ -1,0 +1,23 @@
+html
+  head
+    title= title
+    style
+        include ./styles.css
+  body
+    header
+        <h1><a href="/">Schedule Management System</a></h1>
+    
+    block main
+        div='This is the main page, please select item from menu'
+        button.button1#button_users
+            a(href='/users') Users
+        button.button1#button_schedules
+            a(href='/schedules') Schedules
+    footer
+        div      
+            p="Powerd by SuperAli"
+        
+        block scripts
+
+
+   

@@ -1,0 +1,13 @@
+extends index.pug 
+
+block main
+        div#message= message
+        button.button1#button_new_user
+            a(href='/users/new') New user
+        button.button1#button_userid
+            a(href='/userid') Find user
+
+block scripts
+    script
+        include ./scripts/users_script.js
+          

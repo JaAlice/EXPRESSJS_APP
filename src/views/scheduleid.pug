@@ -1,0 +1,17 @@
+extends index.pug 
+
+block main
+        form(action="/scheduleid" method="POST")
+            p User ID:
+            input(type="number" name="User_ID" required=true min="100")
+            br
+            input(type="submit")
+            br
+            div= answer
+            div#message= message
+            button.button1#button_users
+                a(href='/schedules') Back to Schedules
+
+block scripts
+    script
+        include ./scripts/users_script.js

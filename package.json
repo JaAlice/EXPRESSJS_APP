@@ -11,6 +11,9 @@
   "dependencies": {
     "crypto-js": "^4.1.1",
     "express": "^4.17.1",
-    "node-libcurl": "^2.3.3"
+    "express-formidable": "^1.2.0",
+    "node-libcurl": "^2.3.3",
+    "pg": "^8.7.1",
+    "pug": "^3.0.2"
   }
 }

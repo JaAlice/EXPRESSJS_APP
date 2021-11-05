@@ -1,0 +1,19 @@
+html
+  head
+    title= title
+  body
+    <h1><a href="/">Welcome to Schedule Management System</a></h1>
+    div= message
+    br
+    div= tresc 
+    <div>
+    <button class="button1"><a href="/users">Users</a></button>
+    <button class="button1"><a href="/schedules">Schedules</a></button>
+    </div>
+    <form method="post" id="contact_form" class="sForm" action="/users4">     
+     <div><input type="text" name="firstname" id="firstname" class="formField" /></div>
+     <div><input type="text" name="lastname" id="lastname" class="formField"/></div>
+     <div><input type="text" name="email" id="email" class="formField" /></div>
+     <div><input type="text" name="password" id="password" class="formField" /></div>
+     <div><button id="sendBtn" type="submit" class="sButton">On vous attend !</button></div></div>
+    </form>

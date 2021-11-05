@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Alicja Godek" />
+		<meta
+			name="keywords"
+			content="Coffee, kawa, arabica, ziarnista, mielona, mocna, latte, kawa z mlekiem, capuccino, espresso"
+		/>
+		<meta name="description" content="Strona poświęcona miłośnikom kawy" />
+
+		<title>Mr Coffee</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="application.css" />
+	</head>
+	<body>
+		<header>
+       
+         </header>    
+                  
+        <main> 
+            <form method="post" id="contact_form" class="sForm">
+                <div class="outerDiv"><div class="divInner"><label for="name" class= "colorLab">Nom*</label></div>
+                <div><input type="text" name="name" id="name" class="formField" placeholder="Wpisz imię..." required=true pattern="\w+" title="Użyj tylko liter"/></div>
+                
+                <div class="divInner"><label for="surname" class= "colorLab">Prenom*</label></div>
+                <div><input type="text" name="surName" id="surname" class="formField"  placeholder="Wpisz nazwisko..." required=true pattern="\w+" title="Użyj tylko liter"/></div>
+           
+                <div class="divInner"><label for="phone" class= "colorLab">Telephone</label></div>
+                <div><input type="text" name="phone" id="phone" class="formField"  placeholder="Wpisz numer..." pattern="\+{0,1}[0-9]{9,25}" title="Użyj tylko cyfr (co najmniej 9), dopuszczalny jest znak + na początku"/></div>
+           
+                <div class="divInner"><label for="email" class= "colorLab">Adresse email*</label></div>
+                <div><input type="email" name="email" id="email" class="formField"  placeholder="Wpisz adres email..." required=true pattern="\w+@\w+.(\w){2,5}" title="Adres składa się z nazwy użytkownika, następnie znak @, następnie nazwa domeny, która musi zawierać kropkę - na przykład jan@muzyka.pl"/></div>
+                
+                <div class="divInner"><label for="message" class= "colorLab">Message*</label></div>
+                <div><textarea name="message" id="message" class="formFieldMes"  placeholder="Wiadomość" required=true></textarea></div>
+               <div><button id="sendBtn" type="submit" class="sButton">On vous attend !</button></div></div>
+           </form>;
+			
+        </main>
+		<footer>
+            
+        </footer>
+        <script src="form.js"></script>
+	</body>
+</html>
